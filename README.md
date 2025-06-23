@@ -10,10 +10,6 @@
 - Built-in HTTP Server – Serve content or APIs using native JS syntax.
 - Future-Proof – Sandboxing, permissions, and TypeScript support on the roadmap.
 
-## Installation
-
-> Work in progress
-
 ## Tech Stack
 
 - **Go** – Core language used to build the runtime.
@@ -40,6 +36,12 @@ neon/
 ├── README.md
 └── Makefile         # Build and development commands
 ```
+
+---
+
+## Installation
+
+> Work in progress
 
 ---
 
