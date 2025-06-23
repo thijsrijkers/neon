@@ -15,15 +15,6 @@ Neon is for developers who want:
 - Flexibility to experiment with runtime behavior, permission models, and APIs.
 - An ideal foundation for building developer tools, web frameworks, and edge runtimes.
 
-
-## Core Principles
-
-- **Performance-first**: Powered by V8, designed to stay lean and fast.
-- **Simplicity over complexity**: Written in Go with modular, readable code.
-- **Modern JavaScript**: ES6+ syntax, npm support, server APIs.
-- **Extendability**: Built for embedding, customization, and future features like TypeScript, WASM, and sandboxing.
-
-
 ## Installation
 
 > Work in progress
@@ -47,6 +38,13 @@ neon run server.js
 ```
 
 Visit http://localhost:8080 in your browser.
+
+## Core Principles
+
+- **Performance-first**: Powered by V8, designed to stay lean and fast.
+- **Simplicity over complexity**: Written in Go with modular, readable code.
+- **Modern JavaScript**: ES6+ syntax, npm support, server APIs.
+- **Extendability**: Built for embedding, customization, and future features like TypeScript, WASM, and sandboxing.
 
 ## Project Structure
 
