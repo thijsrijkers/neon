@@ -37,33 +37,6 @@ go test ./unit...
 - **macOS:**  
   Install Xcode Command Line Tools using `xcode-select --install`.
 
-
-## Build a simple HTTP server
-
-Neon lets you serve HTTP directly from JavaScript. You can create the server by making a server.js for example and put in the following code:
-```js
-neon.serve((req) => {
-  return {
-    status: 200,
-    body: "Hello from Neon!",
-  };
-});
-```
-
-To start the server you can execute the file by running the following command:
-```js
-neon run server.js
-```
-
-Visit http://localhost:8080 in your browser.
-
-## Core Principles
-
-- **Performance-first**: Powered by V8, designed to stay lean and fast.
-- **Simplicity over complexity**: Written in Go with modular, readable code.
-- **Modern JavaScript**: ES6+ syntax, npm support, server APIs.
-- **Extendability**: Built for embedding, customization, and future features like TypeScript, WASM, and sandboxing.
-
 ## Project Structure
 
 ```graphql
