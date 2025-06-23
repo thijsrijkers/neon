@@ -4,7 +4,6 @@
 
 It offers a modern alternative to Node.js and Deno by combining the raw performance of Google's V8 engine with the simplicity and efficiency of Go. Neon is designed to run JavaScript outside the browser with full npm support, a built-in HTTP server, and an architecture optimized for developer tooling and extensibility.
 
----
 
 ## Why Neon?
 
@@ -16,7 +15,6 @@ Neon is for developers who want:
 - Flexibility to experiment with runtime behavior, permission models, and APIs.
 - An ideal foundation for building developer tools, web frameworks, and edge runtimes.
 
----
 
 ## Core Principles
 
@@ -25,28 +23,6 @@ Neon is for developers who want:
 - **Modern JavaScript**: ES6+ syntax, npm support, server APIs.
 - **Extendability**: Built for embedding, customization, and future features like TypeScript, WASM, and sandboxing.
 
----
-
-## MVP Features
-
-- **Powered by V8** – Uses the same JavaScript engine as Chrome and Node.js.
-- **npm Package Support** – Install and run npm modules in your scripts.
-- **Modular Runtime** – Go-based architecture with clean interfaces.
-- **Built-in HTTP Server** – Create web servers directly from JS code.
-- **Future-Oriented** – Plans for permissions, ESM, TypeScript, and WASM.
-
----
-
-## Tech Stack
-
-- **Go** – Core language used to build the runtime.
-- **V8** – High-performance JavaScript engine (via CGo bindings).
-- **npm** – Integrated via shell or native registry access.
-- **ESBuild** – (Optional) Used for bundling, transforming code.
-- **libuv** – (Planned) Event loop and async I/O support.
-- **net/http** – Go’s built-in HTTP server for exposing runtime APIs.
-
----
   
 ## Project Structure
 
@@ -66,7 +42,6 @@ neon/
 └── Makefile         # Build and development commands
 ```
 
----
 
 ## Installation
 
@@ -134,7 +109,25 @@ neon run server.js
 
 Visit http://localhost:8080 in your browser.
 
----
+
+## MVP Features
+
+- **Powered by V8** – Uses the same JavaScript engine as Chrome and Node.js.
+- **npm Package Support** – Install and run npm modules in your scripts.
+- **Modular Runtime** – Go-based architecture with clean interfaces.
+- **Built-in HTTP Server** – Create web servers directly from JS code.
+- **Future-Oriented** – Plans for permissions, ESM, TypeScript, and WASM.
+
+
+## Tech Stack
+
+- **Go** – Core language used to build the runtime.
+- **V8** – High-performance JavaScript engine (via CGo bindings).
+- **npm** – Integrated via shell or native registry access.
+- **ESBuild** – (Optional) Used for bundling, transforming code.
+- **libuv** – (Planned) Event loop and async I/O support.
+- **net/http** – Go’s built-in HTTP server for exposing runtime APIs.
+  
 
 ## Goals and Roadmap
 
@@ -149,3 +142,4 @@ Visit http://localhost:8080 in your browser.
 - [ ] Plugin API
 - [ ] Cross-platform static binaries
 - [ ] Sandboxed execution with memory/CPU limits
+
