@@ -2,8 +2,6 @@
 
 **Neon** is a modern JavaScript runtime built with **Go** and powered by **V8**, designed for speed, simplicity, and developer productivity. It aims to provide a clean and extensible platform for running JavaScript outside the browser, with first-class support for **npm packages** and seamless integration of modern tooling.
 
----
-
 ## Features (MVP)
 
 - Powered by V8 – High-performance JavaScript engine used by Chrome and Node.js.
@@ -12,13 +10,9 @@
 - Built-in HTTP Server – Serve content or APIs using native JS syntax.
 - Future-Proof – Sandboxing, permissions, and TypeScript support on the roadmap.
 
----
-
 ## Installation
 
 > Work in progress
-
----
 
 ## Quick Start
 
@@ -43,8 +37,6 @@ neon.serve((req) => {
 });
 ```
 
----
-
 ## Tech Stack
 
 - **Go** – Core language used to build the runtime.
@@ -54,10 +46,9 @@ neon.serve((req) => {
 - **libuv** – (Planned) Event loop and async I/O support.
 - **net/http** – Go’s built-in HTTP server for exposing runtime APIs.
 
----
-
 ## Project Structure
 
+```graphql
 neon/             
 ├──main.go
 |           
@@ -71,8 +62,7 @@ neon/
 ├── go.mod
 ├── README.md
 └── Makefile         # Build and development commands
-
----
+```
 
 ## Goals and Roadmap
 
