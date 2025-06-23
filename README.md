@@ -43,7 +43,6 @@ go test ./unit...
 neon/             
 ├── main.go
 |           
-├── v8/              # V8 bindings and engine bootstrap
 ├── runtime/         # Core runtime logic (script loading, eval)
 ├── npm/             # npm install logic, package resolution
 ├── server/          # HTTP server logic exposed to JavaScript
