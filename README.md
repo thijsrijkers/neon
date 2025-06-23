@@ -54,6 +54,17 @@ neon/
 └── Makefile         # Build and development commands
 ```
 
+## Testing:
+
+### 1. Unit Testing
+To run the unit tests, navigate to the source folder and run:
+
+```bash
+go test ./unit...
+```
+
+This will execute the unit tests and display the results in your terminal.
+
 ## License
 
 This project is licensed under the [MIT License](./LICENSE).
