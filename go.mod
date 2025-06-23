@@ -1,3 +1,3 @@
-module foundation
+module neon
 
 go 1.24.2
