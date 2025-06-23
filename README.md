@@ -41,6 +41,8 @@ neon/
 └── Makefile         # Build and development commands
 ```
 
+---
+
 ## Quick Start
 
 Let's create your first Neon project.
@@ -101,6 +103,8 @@ neon run server.js
 ```
 
 Visit http://localhost:8080 in your browser.
+
+---
 
 ## Goals and Roadmap
 
