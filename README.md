@@ -16,26 +16,64 @@
 
 ## Quick Start
 
-Install a package:
+Let's create your first Neon project.
+
+### 1. Write your first script
+
+Create a file called `main.js`:
+
+```js
+console.log("Welcome to Neon!");
+``` 
+
+Run it with:
+
+```js
+neon run main.js
 ```
+
+### 2. Install an npm package
+
+You can use packages from the npm registry:
+
+```js
 neon install lodash
 ```
 
-Use it:
-```
+This will download lodash and make it available in your project.
+
+Update main.js:
+
+```js
 const _ = require("lodash");
-console.log(_.shuffle([1, 2, 3, 4]));
+
+console.log(_.shuffle(["neon", "is", "fast", "and", "modular"]));
 ```
 
-Start an HTTP server:
-```
+Then run it again.
+
+### 3. Build a simple HTTP server
+
+Neon lets you serve HTTP directly from JavaScript.
+
+Create server.js:
+
+```js
 neon.serve((req) => {
   return {
     status: 200,
-    body: "Hello from server!",
+    body: "Hello from Neon!",
   };
 });
 ```
+
+Start the server:
+
+```js
+neon run server.js
+```
+
+Visit http://localhost:8080 in your browser.
 
 ## Tech Stack
 
