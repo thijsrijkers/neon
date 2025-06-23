@@ -43,7 +43,6 @@ neon/
 
 > Work in progress
 
----
 
 ## Quick Start
 
