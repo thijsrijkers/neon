@@ -19,6 +19,24 @@ Neon is for developers who want:
 
 > Work in progress
 
+### Verify V8 Integration & GCC Setup
+
+#### Test V8 Integration
+
+Run the unit tests to verify V8 works:
+
+```bash
+go test ./unit...
+``` 
+
+#### GCC Setup
+
+- **Windows:**  
+  Install MSYS2 with mingw64 toolchain, then add `C:\msys64\mingw64\bin` to your system PATH.
+
+- **macOS:**  
+  Install Xcode Command Line Tools using `xcode-select --install`.
+
 
 ## Build a simple HTTP server
 
