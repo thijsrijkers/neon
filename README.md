@@ -14,6 +14,33 @@
 
 > Work in progress
 
+## Tech Stack
+
+- **Go** – Core language used to build the runtime.
+- **V8** – High-performance JavaScript engine (via CGo bindings).
+- **npm** – Integrated via shell or native registry access.
+- **ESBuild** – (Optional) Used for bundling, transforming code.
+- **libuv** – (Planned) Event loop and async I/O support.
+- **net/http** – Go’s built-in HTTP server for exposing runtime APIs.
+
+## Project Structure
+
+```graphql
+neon/             
+├──main.go
+|           
+├── v8/              # V8 bindings and engine bootstrap
+├── runtime/         # Core runtime logic (script loading, eval)
+├── npm/             # npm install logic, package resolution
+├── server/          # HTTP server logic exposed to JavaScript
+├── pkg/             # Shared libraries (if any)
+├── scripts/         # Example or test JavaScript scripts
+├── tests/           # Unit and integration tests
+├── go.mod
+├── README.md
+└── Makefile         # Build and development commands
+```
+
 ## Quick Start
 
 Let's create your first Neon project.
@@ -74,33 +101,6 @@ neon run server.js
 ```
 
 Visit http://localhost:8080 in your browser.
-
-## Tech Stack
-
-- **Go** – Core language used to build the runtime.
-- **V8** – High-performance JavaScript engine (via CGo bindings).
-- **npm** – Integrated via shell or native registry access.
-- **ESBuild** – (Optional) Used for bundling, transforming code.
-- **libuv** – (Planned) Event loop and async I/O support.
-- **net/http** – Go’s built-in HTTP server for exposing runtime APIs.
-
-## Project Structure
-
-```graphql
-neon/             
-├──main.go
-|           
-├── v8/              # V8 bindings and engine bootstrap
-├── runtime/         # Core runtime logic (script loading, eval)
-├── npm/             # npm install logic, package resolution
-├── server/          # HTTP server logic exposed to JavaScript
-├── pkg/             # Shared libraries (if any)
-├── scripts/         # Example or test JavaScript scripts
-├── tests/           # Unit and integration tests
-├── go.mod
-├── README.md
-└── Makefile         # Build and development commands
-```
 
 ## Goals and Roadmap
 
