@@ -23,25 +23,6 @@ Neon is for developers who want:
 - **Modern JavaScript**: ES6+ syntax, npm support, server APIs.
 - **Extendability**: Built for embedding, customization, and future features like TypeScript, WASM, and sandboxing.
 
-  
-## Project Structure
-
-```graphql
-neon/             
-├── main.go
-|           
-├── v8/              # V8 bindings and engine bootstrap
-├── runtime/         # Core runtime logic (script loading, eval)
-├── npm/             # npm install logic, package resolution
-├── server/          # HTTP server logic exposed to JavaScript
-├── pkg/             # Shared libraries (if any)
-├── scripts/         # Example or test JavaScript scripts
-├── tests/           # Unit and integration tests
-├── go.mod
-├── README.md
-└── Makefile         # Build and development commands
-```
-
 
 ## Installation
 
@@ -70,3 +51,26 @@ neon run server.js
 ```
 
 Visit http://localhost:8080 in your browser.
+
+## Project Structure
+
+```graphql
+neon/             
+├── main.go
+|           
+├── v8/              # V8 bindings and engine bootstrap
+├── runtime/         # Core runtime logic (script loading, eval)
+├── npm/             # npm install logic, package resolution
+├── server/          # HTTP server logic exposed to JavaScript
+├── pkg/             # Shared libraries (if any)
+├── scripts/         # Example or test JavaScript scripts
+├── tests/           # Unit and integration tests
+├── go.mod
+├── README.md
+└── Makefile         # Build and development commands
+```
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
+
