@@ -31,10 +31,7 @@ Neon is for developers who want:
 
 ## Build a simple HTTP server
 
-Neon lets you serve HTTP directly from JavaScript.
-
-Create server.js:
-
+Neon lets you serve HTTP directly from JavaScript. You can create the server by making a server.js for example and put in the following code:
 ```js
 neon.serve((req) => {
   return {
@@ -44,8 +41,7 @@ neon.serve((req) => {
 });
 ```
 
-Start the server:
-
+To start the server you can execute the file by running the following command:
 ```js
 neon run server.js
 ```
