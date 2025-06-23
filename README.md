@@ -28,7 +28,7 @@ Neon is for developers who want:
 
 ```graphql
 neon/             
-├──main.go
+├── main.go
 |           
 ├── v8/              # V8 bindings and engine bootstrap
 ├── runtime/         # Core runtime logic (script loading, eval)
