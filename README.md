@@ -26,7 +26,7 @@ Neon is for developers who want:
 Run the unit tests to verify V8 works:
 
 ```bash
-go test ./unit...
+go test ./unit/test_v8go.go
 ``` 
 
 #### GCC Setup
